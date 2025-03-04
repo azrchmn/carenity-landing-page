@@ -1,0 +1,651 @@
+/* Utility */
+
+.test-1 {
+  background-color: aqua !important;
+}
+
+.test-2 {
+  background-color: blueviolet !important;
+}
+
+* {
+  font-family: poppins;
+}
+
+.custom-btn {
+  padding: 0.5rem 1.25rem;
+  background-color: #df6d14;
+  border: none;
+  color: #000;
+}
+
+.custom-btn:hover {
+  background-color: #d87a32;
+  color: #000;
+}
+
+/* Navbar */
+nav .container-fluid {
+  padding: 20px 70px;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #ccc !important;
+}
+
+/* Hero */
+.hero {
+  margin-top: -102px;
+}
+
+.hero-body:nth-child(1) {
+  background-color: #df6d14;
+}
+
+.hero-body:nth-child(2) {
+  --s: 50px; /* control the size*/
+  --c1: #005a1e;
+  --c2: #00712d;
+
+  --c: #0000 79%, var(--c1) 81% 99%, var(--c2) 101% 150%, #0000 0;
+  background: radial-gradient(var(--s) at 100% 100%, var(--c)),
+    radial-gradient(var(--s) at 100% 0, var(--c)) calc(3 * var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 100%, var(--c)) calc(var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 0, var(--c)) calc(2 * var(--s)) 0,
+    repeating-linear-gradient(
+        90deg,
+        var(--c1) 0 calc(20% / 3),
+        #0000 0 calc(70% / 3),
+        var(--c1) 0 30%,
+        #0000 0 50%
+      )
+      calc(var(--s) / -5) 0 var(--c2);
+  background-size: calc(3 * var(--s)) calc(5 * var(--s) / 2);
+}
+
+.hero-body img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-left:nth-child(1) {
+  color: black;
+  border-bottom: 1px solid black;
+  margin-top: 20vh;
+  padding: 30px 60px;
+}
+
+.hero-left:nth-child(2) {
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 30px 60px;
+}
+
+.hero-right {
+  margin-top: 15vh;
+  padding: 30px 60px;
+}
+
+.hero-right h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: white;
+  display: inline;
+}
+
+.hero .icon {
+  font-size: 3rem;
+}
+
+.btn-trailer {
+  background-color: #df6d14;
+  padding: 10px 20px;
+  border: none;
+  color: #000;
+}
+
+.btn-trailer:hover {
+  background-color: #d87a32;
+  color: #000;
+}
+
+/* Counter */
+.counter {
+  width: 100%;
+  padding: 0 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter h1 {
+  font-family: acme;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.counter-header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.counter-header::before,
+.counter-header::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20vw;
+  height: 1px;
+  background-color: black;
+}
+
+.counter-header::before {
+  left: 0px;
+}
+
+.counter-header::after {
+  right: 0;
+}
+
+.counter h1 span {
+  font-family: acme;
+}
+
+.counter h2 {
+  font-family: acme;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.counter i {
+  font-size: 2rem;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Details */
+.details {
+  height: 500px;
+  width: 100%;
+  --s: 50px; /* control the size*/
+  --c1: #005a1e;
+  --c2: #00712d;
+
+  --c: #0000 79%, var(--c1) 81% 99%, var(--c2) 101% 150%, #0000 0;
+  background: radial-gradient(var(--s) at 100% 100%, var(--c)),
+    radial-gradient(var(--s) at 100% 0, var(--c)) calc(3 * var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 100%, var(--c)) calc(var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 0, var(--c)) calc(2 * var(--s)) 0,
+    repeating-linear-gradient(
+        90deg,
+        var(--c1) 0 calc(20% / 3),
+        #0000 0 calc(70% / 3),
+        var(--c1) 0 30%,
+        #0000 0 50%
+      )
+      calc(var(--s) / -5) 0 var(--c2);
+  background-size: calc(3 * var(--s)) calc(5 * var(--s) / 2);
+}
+
+.details .row {
+  height: 100%;
+  padding: 30px 60px;
+}
+
+.details img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details h1 {
+  font-family: acme;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card p {
+  margin-bottom: 0 !important;
+}
+
+.card .btn-light {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.card .btn-light:hover {
+  border: white;
+  color: white;
+  background-color: #df6d14;
+}
+
+/* Highlights */
+.highlights {
+  width: 100%;
+  --s: 50px; /* control the size*/
+  --c1: #005a1e;
+  --c2: #00712d;
+
+  --c: #0000 79%, var(--c1) 81% 99%, var(--c2) 101% 150%, #0000 0;
+  background: radial-gradient(var(--s) at 100% 100%, var(--c)),
+    radial-gradient(var(--s) at 100% 0, var(--c)) calc(3 * var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 100%, var(--c)) calc(var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 0, var(--c)) calc(2 * var(--s)) 0,
+    repeating-linear-gradient(
+        90deg,
+        var(--c1) 0 calc(20% / 3),
+        #0000 0 calc(70% / 3),
+        var(--c1) 0 30%,
+        #0000 0 50%
+      )
+      calc(var(--s) / -5) 0 var(--c2);
+  background-size: calc(3 * var(--s)) calc(5 * var(--s) / 2);
+}
+
+.highlights .row {
+  padding: 30px 60px;
+}
+
+.highlights h1 {
+  font-family: acme;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 80px;
+}
+
+.highlights .points {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.highlights img {
+  object-fit: cover;
+}
+
+.bingkai-besar {
+  width: 100%;
+  height: auto;
+}
+
+.bingkai-besar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bingkai-kecil {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* .bingkai-kecil img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
+.bingkai-kecil .kotak {
+  width: 48%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.bingkai-kecil .kotak img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bingkai-kecil .lingkaran {
+  width: 48%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Ensures the circle is square */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bingkai-kecil .lingkaran img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FAQ */
+.faq {
+  width: 100%;
+  margin: 80px 0;
+  padding: 0 72px;
+}
+
+.faq h1 {
+  font-family: acme;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: #d87a32;
+  color: black;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Footer */
+footer {
+  /* height: 500px; */
+  color: white;
+  width: auto;
+  --s: 50px; /* control the size*/
+  --c1: #005a1e;
+  --c2: #00712d;
+
+  --c: #0000 79%, var(--c1) 81% 99%, var(--c2) 101% 150%, #0000 0;
+  background: radial-gradient(var(--s) at 100% 100%, var(--c)),
+    radial-gradient(var(--s) at 100% 0, var(--c)) calc(3 * var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 100%, var(--c)) calc(var(--s) / 2) 0,
+    radial-gradient(var(--s) at 0 0, var(--c)) calc(2 * var(--s)) 0,
+    repeating-linear-gradient(
+        90deg,
+        var(--c1) 0 calc(20% / 3),
+        #0000 0 calc(70% / 3),
+        var(--c1) 0 30%,
+        #0000 0 50%
+      )
+      calc(var(--s) / -5) 0 var(--c2);
+  background-size: calc(3 * var(--s)) calc(5 * var(--s) / 2);
+}
+
+footer .row {
+  width: auto;
+  padding: 40px 60px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.sosial-media a {
+  background-color: #005a1e9a;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.sosial-media a:hover {
+  background-color: white;
+  border: white;
+}
+
+.sosial-media a:hover i {
+  color: black;
+}
+
+.sosial-media i {
+  color: white;
+  font-size: 1.25rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+ul a {
+  color: white;
+}
+
+ul a:hover {
+  color: #cccc;
+}
+
+footer .card {
+  width: 100%;
+  height: 100%;
+}
+
+footer .copyright {
+  border-top: 1px solid white;
+  margin: 0 60px;
+  padding: 20px 0px;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+
+/* Media Query Tablets */
+@media (max-width: 991px) {
+  .custom-btn {
+    border-color: darkgray;
+  }
+
+  nav .container-fluid {
+    padding: 0px 70px;
+  }
+
+  .navbar-brand {
+    color: black !important;
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+  }
+
+  .nav-link {
+    color: black !important;
+  }
+
+  .hero {
+    margin-top: 0;
+  }
+
+  .hero-right h1 {
+    font-size: 6rem;
+  }
+
+  .hero-body:nth-child(1) {
+    order: 2;
+  }
+
+  .hero-body:nth-child(2) {
+    order: 1;
+  }
+
+  .hero-left:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .counter-header::before,
+  .counter-header::after {
+    width: 15vw;
+  }
+
+  .details {
+    height: 400px;
+  }
+
+  .details h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 834px) {
+  .details h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Media Query landscape Phones */
+@media (max-width: 767px) {
+  .hero-left:nth-child(1) {
+    margin-top: 5vh;
+  }
+
+  .hero-right {
+    margin-top: 5vh;
+  }
+
+  .hero-right h1 {
+    font-size: 4rem;
+  }
+
+  .counter h1 {
+    font-size: 3rem;
+  }
+
+  .counter h2 {
+    font-size: 3rem;
+  }
+
+  .counter i {
+    font-size: 1.5rem;
+  }
+
+  .carousel {
+    height: 35vw;
+  }
+
+  .details {
+    height: 100%;
+    width: 100%;
+  }
+
+  .details .row {
+    text-align: center;
+  }
+
+  .details h1 {
+    font-size: 3rem;
+  }
+
+  .faq h1 {
+    font-size: 3.25rem;
+  }
+}
+
+/* Media Query Phones */
+@media (max-width: 575px) {
+  nav .container-fluid {
+    padding: 0 20px;
+  }
+
+  .hero-left:nth-child(1) {
+    padding: 20px 20px;
+  }
+
+  .hero-left:nth-child(2) {
+    padding: 20px 20px;
+  }
+
+  .hero-left .icon {
+    font-size: 2.5rem;
+  }
+
+  .hero-right {
+    padding: 20px 20px;
+  }
+
+  .hero-right h1 {
+    font-size: 3.5rem;
+  }
+
+  .counter {
+    padding: 0 20px;
+  }
+
+  .counter-header::before,
+  .counter-header::after {
+    display: none;
+  }
+
+  .counter h1 {
+    font-size: 2rem;
+  }
+
+  .carousel {
+    height: 40vw;
+  }
+
+  .counter h2 {
+    font-size: 3rem;
+  }
+
+  .counter i {
+    font-size: 1.5rem;
+  }
+
+  .details {
+    height: 100%;
+    width: 100%;
+  }
+
+  .details .row {
+    padding: 30px 20px;
+  }
+
+  .highlights .row {
+    padding: 30px 30px;
+  }
+
+  .highlights h1 {
+    font-size: 3.5rem;
+  }
+
+  .faq {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 22px;
+  }
+
+  .faq h1 {
+    font-size: 3.25rem;
+  }
+}
